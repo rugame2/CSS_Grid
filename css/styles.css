@@ -1,0 +1,64 @@
+.grid-wrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /* grid-template-rows == gridRows;
+    grid-template-columns == gridColumns
+    */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 3fr 2fr;
+    grid-template-areas:
+        "Header"    "Header"    "NavBar"
+        "Content"   "Content2"  "NavBar"
+        "Content"   "Content2"  "NavBar"
+        "Content"   "Content2"  "NavBar"
+        "Footer"    "Footer"    "Footer";
+}
+.Header{
+    grid-area: Header;
+    background-color: rgb(153, 0, 255);
+    display: block;
+    margin: 4vh;
+    padding: 10px;
+    border: 8px;
+    border-radius: 2px;
+}
+
+.Content{
+    grid-area: Content;
+    background-color: rgb(153, 0, 255);
+    display: block;
+    margin: 3vh;
+    padding: 10px;
+    border: 8px;
+    border-radius: 2px;
+}
+.Content2{
+    grid-area: Content2;
+    background-color: rgb(153, 0, 255);
+    display: block;
+    margin: 3vh;
+    padding: 10px;
+    border: 8px;
+    border-radius: 2px;
+}
+
+.Footer{
+    grid-area: Footer;
+    background-color: rgb(153, 0, 255);
+    display: block;
+    margin: 3vh;
+    padding: 10px;
+}
+
+.NavBar{
+    grid-area: NavBar;
+    background-color: rgb(153, 0, 255);
+    display: block;
+    justify-content: right;
+    border: 8px;
+    border-radius: 2px;
+    padding: 10px;
+} 
+
+
